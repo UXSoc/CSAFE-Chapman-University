@@ -8,8 +8,12 @@
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "@rails/webpacker": "3.5",
     "@salesforce-ux/design-system": "^2.6.2",
+    "babel-preset-react": "^6.24.1",
     "bulma": "^0.7.1",
+    "prop-types": "^15.6.2",
     "rails-ujs": "^5.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react_ujs": "^2.4.4",
     "stimulus": "^1.0.1",
     "turbolinks": "^5.1.1"
