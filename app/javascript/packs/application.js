@@ -19,3 +19,7 @@ document.addEventListener('turbolinks:load', () => {
     library.add(fab, far, fas)
     dom.i2svg()
 })
+// Support component names relative to this directory:
+var componentRequireContext = require.context("components", true)
+var ReactRailsUJS = require("react_ujs")
+ReactRailsUJS.useContext(componentRequireContext)

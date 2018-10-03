@@ -15,7 +15,7 @@ html
 
     .container[style="display:flex;justify-content:between"]
       - if user_signed_in?
-        = render partial: "shared/sidebar"
+        /= render partial: "shared/sidebar"
 
       .content
         = yield
