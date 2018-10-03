@@ -1,0 +1,37 @@
+.bg-blue.for-navbar-fixed-top
+  .section
+    .container
+      nav.level.is-mobile
+        .level-item.has-text-centered
+          figure.image.is-128x128
+            img src="https://bulma.io/images/placeholders/128x128.png"
+      h3.subtitle.has-text-centered CSAFE Signup
+
+  .section
+    .container
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        - if resource.errors.any?
+          .message.is-danger
+            .message-body
+              = resource.errors.full_messages.to_sentence
+
+        .field
+          p.control.has-icons-left
+            = f.email_field :email, value: @email, placeholder: "Email", autofocus: true, autocomplete: "email", class: "input is-medium"
+            span.icon.is-medium.is-left
+              i.fas.fa-envelope
+
+        .field
+          p.control.has-icons-left
+            = f.password_field :password, placeholder: "Password", autocomplete: "off", class: "input is-medium"
+            span.icon.is-medium.is-left
+              i.fas.fa-lock
+
+        .field
+          p.control.has-icons-left
+            = f.password_field :password_confirmation, placeholder: "Confirm Password", autocomplete: "off", class: "input is-medium"
+            span.icon.is-medium.is-left
+              i.fas.fa-check
+
+        = f.submit "Sign up", class: "button is-link is-fullwidth"
+      = render "devise/shared/links"
