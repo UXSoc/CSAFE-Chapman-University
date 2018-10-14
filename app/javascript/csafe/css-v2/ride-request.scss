@@ -1,5 +1,26 @@
-.ride-input {
-  height: 34vh;
+.ride-container {
+  height: 100vh;
   width: 100vw;
+}
+
+.map-container {
+  height: 66%;
+  width: 100%;
+}
+
+.ride-input {
+  height: 34%;
+  width: 100%;
   background-color: #eceff5;
+}
+
+.logout-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
