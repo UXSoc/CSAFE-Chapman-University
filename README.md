@@ -49,6 +49,11 @@ To avoid installing gems from scratch in each time when Gemfile will be updated,
 $ docker-compose run web bundle
 ```
 
+### Environment variables
+
+- `MAPBOX_TOKEN` used to access the mapbox api. Get a token at the mapbox
+  website.
+
 ## Maintainers
 
 The current maintainers of this repository are:

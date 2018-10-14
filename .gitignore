@@ -142,3 +142,6 @@ yarn-debug.log*
 
 # Ignore uploaded files in development
 /storage/*
+
+# Ignore environment files
+.env.local

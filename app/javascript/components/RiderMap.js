@@ -5,7 +5,7 @@ import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
 class RiderMap extends React.Component {
   render () {
     const Map = ReactMapboxGl({
-      accessToken: "pk.eyJ1IjoiYWJsYXoxMDEiLCJhIjoiY2ptdmM2Z3Z4MDVldzN2bms4amltcTR1biJ9.kfxH5snSWzvvoz90cow8ng"
+      accessToken: this.props.token
     });
     const zoom =[8];
 
