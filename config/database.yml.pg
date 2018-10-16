@@ -1,0 +1,18 @@
+---
+development: &default
+  adapter: postgresql
+  encoding: unicode
+  database: csafe_dev
+  pool: 5
+  username: postgres
+  password:
+  host: localhost # running app and tests from the host
+  # host: db # running all in services
+
+test:
+  <<: *default
+  database: csafe_test
+
+production:
+  <<: *default
+  database: csafe_production

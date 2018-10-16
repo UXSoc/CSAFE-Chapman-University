@@ -19,6 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'mysql2', '~> 0.4.10' #MYSQL Gem
 
+gem 'pg'
 
 gem 'ffi', '~> 1.9.21'
 # See https://github.com/rails/execjs#readme for more supported runtimes
