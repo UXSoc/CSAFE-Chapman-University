@@ -40,10 +40,11 @@ class RiderMapv2 extends React.Component {
         {...this.state.viewport}
         onViewportChange={(viewport) => this.setState({viewport})}
         mapboxApiAccessToken={this.props.token}
-        />
+        >
         <Marker latitude={33.8242184} longitude={-117.838183} offsetLeft={-20} offsetTop={-10}>
-          <div>You are here</div>
+          <span className="dot"/>
         </Marker>
+        </ReactMapGL>
         <button onClick={this._locateUser}>Locate User</button>
       </div>
     );
